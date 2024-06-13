@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: rgb(230, 238, 241);
+}
+.radio-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #fff;
+  margin-right: 12px;
+  display: inline-block;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.profile-container {
+  position: absolute;
+
+  top: 0.3%;
+  right: 6%;
+}
+
+/* Use background image for the checked state */
+
+.radio-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #fff;
+  margin-right: 12px;
+  display: inline-block;
+  position: relative;
+}
+
+/* Hide the original radio button */
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Custom radio button styles */
+input[type="radio"]:checked + .radio-dot {
+  background-color: green;
+  border: none;
+}
