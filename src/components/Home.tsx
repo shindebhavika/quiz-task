@@ -9,15 +9,15 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto p-4 min-h-screen">
-      <header className="p-3">
-        <div className="container flex justify-between items-center">
+    <div className=" mx-auto p-4 min-h-screen container ">
+      <header className="p-3 container ">
+        <div className=" flex justify-between items-center  ">
           <img
             src="https://t4.ftcdn.net/jpg/03/32/68/71/360_F_332687153_gmsohq86koOEWFYlYSI3N6xzb1zIcG88.jpg"
             alt="Logo"
-            className="w-16 h-16 rounded-full"
+            className="w-16 h-18 rounded-full"
           />
-          <ul className="flex space-x-4 text-lg font-bold">
+          <ul className="flex space-x-4 text-lg font-bold flex-wrap">
             {['Home', 'Features', 'Pricing', 'FAQs', 'About'].map((link) => (
               <li key={link}>
                 <a
@@ -32,13 +32,13 @@ const Home: React.FC = () => {
               </li>
             ))}
           </ul>
-          <div className="flex items-center space-x-4">
-            <img
-              src="https://img.freepik.com/premium-vector/quiz-comic-pop-art-style_175838-505.jpg"
-              alt="Star"
-              className="w-30 h-20"
-            />
-          </div>
+          
+          <img
+            src="https://t4.ftcdn.net/jpg/03/32/68/71/360_F_332687153_gmsohq86koOEWFYlYSI3N6xzb1zIcG88.jpg"
+            alt="Logo"
+            className="w-16 h-16 rounded-full"
+          />
+       
         </div>
       </header>
       <main className="text-center mt-10">
