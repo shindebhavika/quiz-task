@@ -1,6 +1,6 @@
 // src/App.tsx
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Admin from './components/Admin';
 import Quiz from './components/Quiz';
 import Login from './components/Login';
@@ -9,12 +9,8 @@ import Home from './components/Home';
 import PlayQuiz from './components/PlayQuiz';
 
 const App: React.FC = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  useEffect(() => {
-    const authStatus = localStorage.getItem('isAuthenticated');
-    setIsAuthenticated(authStatus === 'true');
-  }, []);
+
 
  
 
