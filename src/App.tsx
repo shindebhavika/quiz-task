@@ -23,7 +23,7 @@ const App: React.FC = () => {
       <div className="container  ">
         
         <Routes>
-          <Route path="/admin" element={isAuthenticated ? <Admin /> : <Navigate to="/login" />} />
+          <Route path="/admin" element={<Admin /> }  />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/playQuiz" element={<PlayQuiz />} />
           <Route path="/login" element={<Login />} />
